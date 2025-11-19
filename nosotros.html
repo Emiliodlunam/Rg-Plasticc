@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros y Sustentabilidad - RG Plastic</title>
+    <!-- Carga de Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Carga de la fuente Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Estilo base para la fuente */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Color de acento personalizado (alineado a paleta de index.html) */
+        .accent-red {
+            color: #DC2626;
+        }
+        .bg-accent-red {
+            background-color: #DC2626;
+        }
+        .hover\:bg-accent-red-dark:hover {
+            background-color: #991B1B;
+        }
+        .border-accent-red {
+            border-color: #DC2626;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <!-- ===== HEADER ===== -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto max-w-6xl px-4 py-4 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="index.html" class="flex items-center space-x-2">
+                <img src="images/logo_rg (1).png" alt="RG Plastic Logo" class="h-12 w-auto">
+                <span class="font-bold text-xl text-gray-800">RG Plastic</span>
+            </a>
+
+            <!-- Links de Navegación -->
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="index.html" class="text-gray-600 hover:text-red-600">Inicio</a>
+                <a href="nosotros.html" class="font-semibold text-red-600 border-b-2 border-red-600">Nosotros</a>
+                <a href="productos.html" class="text-gray-600 hover:text-red-600">Productos</a>
+                <a href="contacto.html" class="text-gray-600 hover:text-red-600">Contacto</a>
+            </div>
+
+            <!-- Botón de Cotización -->
+            <div>
+                <a href="contacto.html" class="bg-red-600 text-white font-semibold px-5 py-2 rounded-lg shadow-md hover:bg-red-700 transition-colors">
+                    Solicitar Cotización
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ===== SECCIÓN "HERO" (Sustentabilidad) ===== -->
+    <section class="relative h-[50vh] min-h-[350px] bg-gray-800 text-white overflow-hidden">
+        <!-- Imagen de fondo (Placeholder) -->
+        <img src="images/estruir.jpg" 
+             alt="Proceso de reciclaje de plástico"
+             class="absolute inset-0 w-full h-full object-cover opacity-40">
+        
+        <!-- Contenido -->
+        <div class="relative container mx-auto max-w-6xl px-4 h-full flex flex-col justify-center z-10">
+            <h1 class="text-4xl md:text-5xl font-bold max-w-3xl leading-tight">
+                Nuestro Compromiso con el Planeta
+            </h1>
+            <p class="mt-4 text-xl md:text-2xl text-gray-200 max-w-2xl">
+                En RG Plastic, la sustentabilidad no es una moda, es nuestro modelo de negocio.
+            </p>
+                <div class="mt-8">
+                <a href="productos.html" class="bg-red-600 text-white font-semibold px-8 py-3 rounded-lg shadow-lg hover:bg-red-700 transition-colors text-lg">
+                    Ver Catálogo de Reciclados
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SECCIÓN "SOBRE NOSOTROS" (Misión/Visión) ===== -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto max-w-6xl px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h3 class="text-sm font-semibold uppercase text-red-600 mb-2">SOBRE RG PLASTIC</h3>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                        Líderes en la Transformación de Polietileno
+                    </h2>
+                    <p class="text-lg text-gray-600 mb-4">
+                        Somos una empresa mexicana dedicada a la fabricación y comercialización de soluciones en polietileno. Nuestra misión es proveer a la industria con productos de alta calidad, al mismo tiempo que lideramos el camino en prácticas de manufactura sostenible.
+                    </p>
+                    <p class="text-lg text-gray-600">
+                        Con años de experiencia, hemos perfeccionado nuestros procesos para convertir el desperdicio post-industrial en materia prima valiosa, cerrando el ciclo de vida del plástico y ofreciendo a nuestros clientes una alternativa económica y ecológica.
+                    </p>
+                </div>
+                <div class="w-full h-80 rounded-lg shadow-lg overflow-hidden">
+                    <img src="images/pallet2.jpg" alt="Planta de producción" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SECCIÓN "ECONOMÍA CIRCULAR" ===== -->
+    <section class="py-16 md:py-24">
+        <div class="container mx-auto max-w-6xl px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900">
+                    Economía Circular en Acción
+                </h2>
+                <p class="text-lg text-gray-600 mt-4 max-w-3xl mx-auto">
+                    Así es como transformamos el desperdicio en productos valiosos.
+                </p>
+            </div>
+            
+            <div class="flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0 md:space-x-4">
+                
+                <!-- Paso 1: Recolección -->
+                <div class="flex-1 text-center px-4">
+                    <div class="w-20 h-20 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-3xl font-bold text-red-600">1</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Recolección</h3>
+                    <p class="text-gray-600">Materia prima 100% post-industrial.</p>
+                </div>
+
+                <!-- Flecha -->
+                <div class="text-red-400 hidden md:block">
+                    <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                </div>
+
+                <!-- Paso 2: Reciclaje -->
+                <div class="flex-1 text-center px-4">
+                    <div class="w-20 h-20 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-3xl font-bold text-red-600">2</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Reciclaje</h3>
+                    <p class="text-gray-600">Limpieza y peletizado del material.</p>
+                </div>
+
+                <!-- Flecha -->
+                <div class="text-red-400 hidden md:block">
+                    <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                </div>
+
+                <!-- Paso 3: Fabricación -->
+                <div class="flex-1 text-center px-4">
+                    <div class="w-20 h-20 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-3xl font-bold text-red-600">3</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Fabricación</h3>
+                    <p class="text-gray-600">Extrusión y embobinado en RG Plastic.</p>
+                </div>
+
+                <!-- Flecha -->
+                <div class="text-red-400 hidden md:block">
+                    <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                </div>
+
+                <!-- Paso 4: Producto -->
+                <div class="flex-1 text-center px-4">
+                    <div class="w-20 h-20 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-3xl font-bold text-red-600">4</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Producto</h3>
+                    <p class="text-gray-600">Rollos y bolsas resistentes para tu industria.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SECCIÓN "BENEFICIOS" ===== -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto max-w-6xl px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900">
+                    Beneficios de Elegir Reciclado
+                </h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Beneficio 1: Planeta -->
+                <div class="bg-gray-50 p-8 rounded-lg shadow-lg text-center">
+                    <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2h10a2 2 0 002-2v-1a2 2 0 012-2h1.945M7.8 13.8A10 10 0 1121 11M3 11a10 10 0 0110.165-9.87M11 3.055A10 10 0 0121 11"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-3">Para el Planeta</h3>
+                    <p class="text-gray-600">Reducimos toneladas de desperdicio plástico de los vertederos, disminuyendo la contaminación.</p>
+                </div>
+                <!-- Beneficio 2: Bolsillo -->
+                <div class="bg-gray-50 p-8 rounded-lg shadow-lg text-center">
+                    <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 1.343-3 3s1.343 3 3 3 3-1.343 3-3-1.343-3-3-3z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.485 10.5A9 9 0 103.515 10.5c1.232-5.065 7.85-5.065 9.082 0 1.232-5.065 7.85-5.065 9.082 0z"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-3">Para tu Bolsillo</h3>
+                    <p class="text-gray-600">Ofrecemos un producto altamente competitivo en precio sin sacrificar la calidad ni la resistencia.</p>
+                </div>
+                <!-- Beneficio 3: Empresa -->
+                <div class="bg-gray-50 p-8 rounded-lg shadow-lg text-center">
+                    <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12 12 0 0012 21.054a12 12 0 008.618-4.991v-.001z"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-3">Para tu Empresa</h3>
+                    <p class="text-gray-600">Ayuda a tu empresa a cumplir metas de sustentabilidad y demuestra tu compromiso con el medio ambiente.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="bg-white border-t border-gray-200 mt-16">
+        <div class="container mx-auto max-w-6xl px-4 py-8 md:py-12">
+            <div class="flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
+                <!-- Logo e Info -->
+                <div class="flex items-center space-x-3">
+                    <!-- Placeholder de Logo -->
+                    <div class="bg-red-600 p-2 rounded-full">
+                        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.363-.886a.5.5 0 01-.022-1.019L18.5 10.5a2.5 2.5 0 00-2.313-3.682l-2.651-.21a.5.5 0 01-.43-.706l1.455-2.908A2.5 2.5 0 0012.383 1H11.617a2.5 2.5 0 00-2.121 2.992l1.455 2.908a.5.5 0 01-.43-.706l-2.651.21a2.5 2.5 0 00-2.313 3.682l2.46 2.461a.5.5 0 01-.022 1.019l-2.363.886a2 2 0 00-1.022.547l-1.373 1.373a2.5 2.5 0 000 3.536l.617.617a2.5 2.5 0 003.535 0L8 19.536l2.47-2.47a.5.5 0 01.708 0L13.646 19.5l.47.47a2.5 2.5 0 003.535 0l.617-.617a2.5 2.5 0 000-3.536l-1.373-1.373z"></path></svg>
+                    </div>
+                    <span class="text-gray-600">Información de Contacto (Tel, Email)</span>
+                </div>
+                
+                <!-- Links de Navegación Footer -->
+                <div class="flex space-x-6">
+                    <a href="index.html" class="text-gray-500 hover:text-red-600">Inicio</a>
+                    <a href="nosotros.html" class="text-gray-500 hover:text-red-600">Nosotros</a>
+                    <a href="productos.html" class="text-gray-500 hover:text-red-600">Productos</a>
+                    <a href="contacto.html" class="text-gray-500 hover:text-red-600">Contacto</a>
+                </div>
+
+                <!-- Legales -->
+                <div>
+                    <a href="#" class="text-gray-500 hover:text-red-600">Aviso de Privacidad / Términos</a>
+                </div>
+            </div>
+            <div class="text-center text-gray-400 text-sm mt-8 border-t pt-6">
+                © 2025 RG Plastic. Todos los derechos reservados.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
