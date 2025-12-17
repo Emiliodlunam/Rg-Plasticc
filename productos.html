@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catálogo de Productos - RG Plastic</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,9 +29,42 @@
         .hidden-product {
             display: none;
         }
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 15px rgba(0,0,0,0.3);
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+        
+        .whatsapp-float:hover {
+            background-color: #20ba5a;
+            transform: scale(1.1);
+        }
     </style>
 </head>
 <body class="bg-gray-50">
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/5214491065191?text=Hola,%20me%20interesa%20cotizar%20productos%20de%20RG%20Plastic" 
+       class="whatsapp-float" 
+       target="_blank"
+       aria-label="Contactar por WhatsApp">
+        <svg viewBox="0 0 32 32" class="w-8 h-8" fill="white">
+            <path d="M16 0c-8.837 0-16 7.163-16 16 0 2.825 0.737 5.607 2.137 8.048l-2.137 7.952 7.933-2.127c2.42 1.37 5.173 2.127 8.067 2.127 8.837 0 16-7.163 16-16s-7.163-16-16-16zM16 29.467c-2.482 0-4.908-0.646-7.07-1.87l-0.507-0.292-4.713 1.262 1.262-4.669-0.292-0.508c-1.207-2.100-1.847-4.507-1.847-6.993 0-7.51 6.11-13.62 13.62-13.62s13.62 6.11 13.62 13.62-6.557 13.070-14.073 13.070zM21.305 18.406c-0.369-0.184-2.18-1.075-2.518-1.196-0.338-0.122-0.584-0.184-0.83 0.184s-0.953 1.196-1.168 1.442c-0.216 0.245-0.431 0.276-0.8 0.092s-1.56-0.575-2.97-1.833c-1.099-0.979-1.841-2.188-2.056-2.557s-0.023-0.566 0.161-0.749c0.166-0.165 0.369-0.43 0.553-0.645s0.246-0.369 0.369-0.615 0.061-0.461-0.031-0.645-0.83-1.999-1.138-2.738c-0.3-0.719-0.605-0.622-0.83-0.634-0.215-0.011-0.461-0.014-0.707-0.014s-0.645 0.092-0.984 0.461-1.291 1.261-1.291 3.075 1.322 3.567 1.506 3.813 2.596 3.966 6.291 5.564c0.88 0.381 1.567 0.608 2.101 0.778 0.884 0.281 1.689 0.241 2.325 0.146 0.709-0.106 2.18-0.891 2.487-1.752s0.307-1.599 0.215-1.752-0.338-0.245-0.707-0.43z"/>
+        </svg>
+    </a>
 
     <!-- HEADER -->
     <header class="bg-white shadow-sm sticky top-0 z-50">
@@ -249,6 +286,11 @@
                         </p>
                     </div>
 
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+                        <img src="images/bultos2.jpg" alt="Bolsa Negra" class="w-full h-48 object-cover rounded-lg shadow-md">
+                        <img src="images/bulto.jpg" alt="Bolsa Café" class="w-full h-48 object-cover rounded-lg shadow-md">
+                    </div>
+
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
                         <div class="bg-gray-50 p-6 rounded-lg">
                             <h3 class="text-xl font-semibold text-gray-800 mb-4">Características:</h3>
@@ -303,7 +345,7 @@
                     Otras Presentaciones y Calibres
                 </h2>
                 <p class="text-center text-gray-300 mb-8 max-w-3xl mx-auto">
-                    Ofrecemos más anchos y espesores para adaptarnos a tus necesidades específicas
+                    Ofrecemos rollos más anchos y espesores para adaptarnos a tus necesidades específicas
                 </p>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
@@ -339,29 +381,45 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="bg-white border-t border-gray-200 mt-16">
-        <div class="container mx-auto max-w-6xl px-4 py-8 md:py-12">
-            <div class="flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
-                    <div class="flex items-center space-x-3">
-                    <div class="bg-red-600 p-2 rounded-full">
-                        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.363-.886a.5.5 0 01-.022-1.019L18.5 10.5a2.5 2.5 0 00-2.313-3.682l-2.651-.21a.5.5 0 01-.43-.706l1.455-2.908A2.5 2.5 0 0012.383 1H11.617a2.5 2.5 0 00-2.121 2.992l1.455 2.908a.5.5 0 01-.43-.706l-2.651.21a2.5 2.5 0 00-2.313 3.682l2.46 2.461a.5.5 0 01-.022 1.019l-2.363.886a2 2 0 00-1.022.547l-1.373 1.373a2.5 2.5 0 000 3.536l.617.617a2.5 2.5 0 003.535 0L8 19.536l2.47-2.47a.5.5 0 01.708 0L13.646 19.5l.47.47a2.5 2.5 0 003.535 0l.617-.617a2.5 2.5 0 000-3.536l-1.373-1.373z"></path></svg>
+    <footer class="bg-gray-900 text-gray-300 mt-16">
+        <div class="container mx-auto max-w-6xl px-4 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div class="md:col-span-2">
+                        <div class="flex items-center space-x-2 mb-4">
+                        <img src="images/logo_rg (1).png" alt="RG Plastic Logo" class="h-10 w-auto">
+                        <span class="font-bold text-xl text-white">RG Plastic</span>
                     </div>
-                    <span class="text-gray-600">rgplastic14@gmail.com</span>
+                    <p class="text-gray-400 mb-4">
+                        Fabricantes de soluciones en polietileno reciclado y virgen. Comprometidos con la calidad y la sustentabilidad.
+                    </p>
                 </div>
                 
-                <div class="flex space-x-6">
-                    <a href="index.html" class="text-gray-600 hover:text-red-600">Inicio</a>
-                    <a href="nosotros.html" class="text-gray-600 hover:text-red-600">Nosotros</a>
-                    <a href="productos.html" class="font-semibold text-red-600 border-b-2 border-red-600">Productos</a>
-                    <a href="contacto.html" class="text-gray-600 hover:text-red-600">Contacto</a>
-                </div>
-
                 <div>
-                    <a href="#" class="text-gray-500 hover:text-red-600">Aviso de Privacidad</a>
+                    <h4 class="text-white font-semibold mb-4">Enlaces</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-red-400 transition-colors">Inicio</a></li>
+                        <li><a href="nosotros.html" class="hover:text-red-400 transition-colors">Nosotros</a></li>
+                        <li><a href="productos.html" class="hover:text-red-400 transition-colors">Productos</a></li>
+                        <li><a href="contacto.html" class="hover:text-red-400 transition-colors">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Contacto</h4>
+                    <ul class="space-y-2">
+                        <li>
+                            <a href="mailto:rgplastic14@gmail.com" class="hover:text-red-400">rgplastic14@gmail.com</a>
+                        </li>
+                        <li class="text-sm">Lun-Vie: 9AM-5:30PM<br>Sáb: 9AM-2PM</li>
+                        <li>
+                            <a href="tel:+524491065191" class="hover:text-red-400">(449) 106 5191</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div class="text-center text-gray-400 text-sm mt-8 border-t pt-6">
-                © 2025 RG Plastic. Todos los derechos reservados.
+            
+            <div class="border-t border-gray-800 pt-6 text-center">
+                <p class="text-gray-500 text-sm">© 2025 RG Plastic. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>
